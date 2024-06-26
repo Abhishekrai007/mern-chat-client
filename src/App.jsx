@@ -5,7 +5,7 @@ import Routes from "./Routes";
 function App() {
   // axios.defaults.baseURL = "http://localhost:3000";
   axios.defaults.baseURL =
-    "https://mer-chat-backend-hkea5dy0y-abhishekrai007s-projects.vercel.app/";
+    "https://mer-chat-backend-hkea5dy0y-abhishekrai007s-projects.vercel.app";
   axios.defaults.withCredentials = true;
 
   return (

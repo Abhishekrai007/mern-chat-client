@@ -22,7 +22,10 @@ const Chat = () => {
   }, []);
 
   const connectToWs = () => {
-    const ws = new WebSocket("ws://localhost:3000");
+    // const ws = new WebSocket("ws://localhost:3000");
+    const ws = new WebSocket(
+      "wss://mer-chat-backend-hkea5dyoy-abhishekrai007s-projects.vercel.app"
+    );
     setWs(ws);
     ws.addEventListener("message", handleMessage);
     ws.addEventListener("close", () => {
